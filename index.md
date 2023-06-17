@@ -3,7 +3,13 @@ layout: default
 title: Student Blog
 ---
 
-# Work Done by Week:
+# Ekam's Incredible Amazing One of a Kind Never Seen Before Show-stopping Wonderful Blog 
+
+ft the iconic frog: 
+
+![](https://i.pinimg.com/originals/83/ce/1e/83ce1e01b27c36bc241948cb3c2c555f.jpg)
+
+## Work Done by Week:
 
 <br> 
 
@@ -17,8 +23,8 @@ title: Student Blog
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-jerg{background-color:#93bd20;border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-sn05{background-color:#93bd20;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-mkpd{background-color:#93bd20;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-f15s{background-color:#93bd20;border-color:inherit;color:#ffffff;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
@@ -29,8 +35,8 @@ title: Student Blog
 </colgroup>
 <thead>
   <tr>
-    <th class="tg-sn05"><span style="font-weight:bold">Week</span></th>
-    <th class="tg-jerg">Tangibles</th>
+    <th class="tg-mkpd"><span style="font-weight:bold">Week</span></th>
+    <th class="tg-f15s">Tangibles</th>
   </tr>
 </thead>
 <tbody>
@@ -60,6 +66,9 @@ title: Student Blog
   </tr>
 </tbody>
 </table>
+
+<br>
+<br>
 
 ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
