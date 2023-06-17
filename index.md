@@ -5,14 +5,14 @@ title: Student Blog
 
 # Ekam's Incredible Amazing One of a Kind Never Seen Before Show-stopping Wonderful Blog 
 
+<br>
 ft the iconic frog: 
 
 ![](https://i.pinimg.com/originals/83/ce/1e/83ce1e01b27c36bc241948cb3c2c555f.jpg)
 
-## Work Done by Week:
-
 <br> 
 
+## Work Done by Week:
 ### Tri 1:
 
 <br>
@@ -28,10 +28,10 @@ ft the iconic frog:
 .tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
-<table class="tg" style="undefined;table-layout: fixed; width: 219px">
+<table class="tg" style="undefined;table-layout: fixed; width: 449px">
 <colgroup>
 <col style="width: 63px">
-<col style="width: 156px">
+<col style="width: 386px">
 </colgroup>
 <thead>
   <tr>
