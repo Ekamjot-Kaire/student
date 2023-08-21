@@ -3,7 +3,7 @@ layout: default
 title: Student Blog
 ---
 
-# Ekam's Incredible Amazing One of a Kind Never Seen Before Show-stopping Wonderful Blog 
+<h1> Ekam Kaire </h1>
 
 <br>
 ft the iconic frog: 
