@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/assets/css/style.css?v=a7a62ea5b1c084429c245baf9c8e56b7f1e7f9df">
+    <link rel="stylesheet" type="text/css" href="/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Javascript Sprite Animation (Draft?) | CompSci Blogs</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Javascript Sprite Animation (Draft?)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A guide on simple sprite animations using Javascript, and how to implement them into games" />
+<meta property="og:description" content="A guide on simple sprite animations using Javascript, and how to implement them into games" />
+<link rel="canonical" href="http://0.0.0.0:4200/2023/06/17/lessondraft_IPYNB_2_.html" />
+<meta property="og:url" content="http://0.0.0.0:4200/2023/06/17/lessondraft_IPYNB_2_.html" />
+<meta property="og:site_name" content="CompSci Blogs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-17T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Javascript Sprite Animation (Draft?)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-17T00:00:00-07:00","datePublished":"2023-06-17T00:00:00-07:00","description":"A guide on simple sprite animations using Javascript, and how to implement them into games","headline":"Javascript Sprite Animation (Draft?)","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4200/2023/06/17/lessondraft_IPYNB_2_.html"},"url":"http://0.0.0.0:4200/2023/06/17/lessondraft_IPYNB_2_.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Javascript Sprite Animation (Draft?) | CompSci Blogs</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Javascript Sprite Animation (Draft?)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A guide on simple sprite animations using Javascript, and how to implement them into games" />
+<meta property="og:description" content="A guide on simple sprite animations using Javascript, and how to implement them into games" />
+<link rel="canonical" href="http://0.0.0.0:4200/2023/06/17/lessondraft_IPYNB_2_.html" />
+<meta property="og:url" content="http://0.0.0.0:4200/2023/06/17/lessondraft_IPYNB_2_.html" />
+<meta property="og:site_name" content="CompSci Blogs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-17T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Javascript Sprite Animation (Draft?)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-17T00:00:00-07:00","datePublished":"2023-06-17T00:00:00-07:00","description":"A guide on simple sprite animations using Javascript, and how to implement them into games","headline":"Javascript Sprite Animation (Draft?)","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4200/2023/06/17/lessondraft_IPYNB_2_.html"},"url":"http://0.0.0.0:4200/2023/06/17/lessondraft_IPYNB_2_.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=a7a62ea5b1c084429c245baf9c8e56b7f1e7f9df">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+</head>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Javascript Sprite Animation (Draft?)</h1>
+          <h2>A guide on simple sprite animations using Javascript, and how to implement them into games</h2>
+        </header>
+        <section id="downloads" class="clearfix">
+          
+	
+        </section>
+        <hr>
+        <section id="main_content">
+          <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 
+      class="post-title p-name" itemprop="name headline">Javascript Sprite Animation (Draft?)
+      • <span class="read-time" title="Estimated read time">
+    
+    
+      30 min read
+    
+</span></h1>
+
+    <p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-06-17T00:00:00-07:00" itemprop="datePublished">
+        Jun 17, 2023
+      </time>
+    </p><h2>Description</h2><p class="page-description">A guide on simple sprite animations using Javascript, and how to implement them into games</p><ul><li><a href="#spritesheet">Spritesheet</a></li><li><a href="#base-html">Base HTML</a></li><li><a href="#setting-up-javascript">Setting up Javascript</a></li><li><a href="#using-object-oriented-programming">Using Object Oriented Programming</a></li><li><a href="#how-the-animation-works">How the animation works</a></li><li><a href="#writing-the-update-method">Writing the Update Method</a></li><li><a href="#making-your-animation-user-responsive">Making Your Animation User Responsive</a></li><li><a href="#calling-class-methods">Calling Class Methods</a></li><li><a href="#put-it-all-together">Put It all Together</a></li></ul></header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Animated characters, objects, or backgrounds have been an essential part of videogames. Many iconic games, such as Super Mario Bros and Sonic the Hedgehog, have used sprite animation to bring their characters to life, and make their products more engaging and visually appealing. This blog is a brief exploration of how javascript can be used to create your own simple animations using sprites. We’ll also talk about how your animations can be made more dynamic, and adapt to user inputs</p>
+
+<h2 id="spritesheet">Spritesheet</h2>
+
+<blockquote>
+  <p>Animation is achieved by quickly sequencing through a series of still images, which when put together, allow the images to appear as if they are moving</p>
+</blockquote>
+
+<blockquote>
+  <p><img src="http://animaders.com/wp-content/uploads/2019/09/Prof._Stampfers_Stroboscopische_Scheibe_No._X.gif" alt="" /></p>
+</blockquote>
+
+<p>In order to create the animation, you need to find an image which contains each individual frame side by side (like shown below) also known as a spritesheet. The code will then sequence through each frame to create the animation.</p>
+
+<p>Below is an example spritesheet, showing 4 different kinds of animation</p>
+
+<p><img src="https://opengameart.org/sites/default/files/deer%20male%20calciumtrice.png" alt="" /></p>
+
+<blockquote>
+  <p>Deer by Calciumtrice, usable under Creative Commons Attribution 3.0 license.</p>
+</blockquote>
+
+<p>A good place to find sprite sheets is <a href="https://opengameart.org/">OpenGameArt</a>, which provides free open source assets which can be used by anyone. Be sure to always credit the sources of images and other creative property (or: make your own, which eliminates the need to credit!)</p>
+
+<p>This blog will go through the steps by using <a href="https://github.com/Ekamjot-Kaire/student/blob/main/_notebooks/images/dogSprites.png">this spritesheet</a> as a demonstration:</p>
+
+<p><strong> Download the image into your files. Then, create an image folder in the _notebooks directory and save this image in that folder. </strong></p>
+
+<p><br />
+<br />
+<br /></p>
+
+<h2 id="base-html">Base HTML</h2>
+
+<p>Create the webpage layout of your animation, including the div in which each image is generated. Below is HTML for a very basic structure which can be used to test your sprites:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s">"spriteContainer"</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="n">Within</span> <span class="n">the</span> <span class="n">base</span> <span class="n">div</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">canvas</span><span class="p">.</span> <span class="n">An</span> <span class="n">HTML</span> <span class="n">canvas</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">only</span> <span class="k">for</span> <span class="n">graphics</span><span class="p">.</span> <span class="n">It</span> <span class="n">allows</span> <span class="n">the</span> <span class="n">user</span> <span class="n">to</span> <span class="n">access</span> <span class="n">some</span> <span class="n">basic</span> <span class="n">functions</span> <span class="n">related</span> <span class="n">to</span> <span class="n">the</span> <span class="n">image</span> <span class="n">created</span> <span class="n">on</span> <span class="n">the</span> <span class="n">canvas</span> <span class="p">(</span><span class="n">including</span> <span class="n">animation</span><span class="p">)</span> <span class="o">--&gt;</span>
+            <span class="o">&lt;</span><span class="n">img</span> <span class="nb">id</span> <span class="o">=</span><span class="s">"dogSprite"</span> <span class="n">src</span><span class="o">=</span><span class="s">"images/carSprites.png"</span><span class="o">&gt;</span> <span class="c1">## link the image with the src tag, and the directory of the sprite sheet in the quotation marks
+</span>        <span class="o">&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s">"controls"</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span><span class="n">basic</span> <span class="n">radio</span> <span class="n">buttons</span> <span class="n">which</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">check</span> <span class="n">whether</span> <span class="n">each</span> <span class="n">individual</span> <span class="n">animaiton</span> <span class="n">works</span> <span class="o">--&gt;</span>
+            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s">"animation"</span> <span class="nb">id</span><span class="o">=</span><span class="s">"idle"</span> <span class="n">checked</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">"idle"</span><span class="o">&gt;</span><span class="n">Idle</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s">"animation"</span> <span class="nb">id</span><span class="o">=</span><span class="s">"barking"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">"barking"</span><span class="o">&gt;</span> <span class="n">Barking</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s">"animation"</span> <span class="nb">id</span><span class="o">=</span><span class="s">"walking"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">"walking"</span><span class="o">&gt;</span> <span class="n">Walking</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<h2 id="setting-up-javascript">Setting up Javascript</h2>
+
+<p>Set up the main function, which will contain the object class for the animation, including the parameters of the object, and the different methods of what the object can do.</p>
+
+<p>For most cases, it is simplest to have the function called when the page is loaded, which would ensure the code works every time someone opens the game. We will also set a few variables, which are further explained in the code comments.</p>
+
+<p>Since we are switching over to Javascript, be sure to put all code within the &lt;”script”&gt; tag (w/out quotations), which will allow the computer to know the code is no longer HTML</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">window</span><span class="p">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s">'load'</span><span class="p">,</span> <span class="n">function</span><span class="p">(){</span>
+        <span class="n">sheet_row</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">//</span> <span class="n">this</span> <span class="n">variable</span> <span class="n">sets</span> <span class="n">which</span> <span class="n">animation</span> <span class="ow">is</span> <span class="n">being</span> <span class="n">played</span> <span class="k">from</span> <span class="n">the</span> <span class="n">sprite</span> <span class="n">sheet</span><span class="p">;</span> <span class="n">we</span><span class="s">'ll explore this later
+        const canvas = document.getElementById('</span><span class="n">spriteContainer</span><span class="s">'); // sets the canvas as a variable by calling the canvas element from the HTML code, using the id we set
+        const ctx = canvas.getContext('</span><span class="mi">2</span><span class="n">d</span><span class="s">'); // the getContext function is a given function with the canvas element. It allows us more functionality with the sprite image
+        canvas.width = 160 * 2; // see below
+        canvas.height = 144 * 2; 
+
+       //more code will be placed here later
+ });
+</span></code></pre></div></div>
+
+<blockquote>
+  <p>NOTE: the particular sprite sheet given for this animation has sprites that are 160 by 144 pixels. Setting the width and height as a variable allows us to change the scale easily. When using other sprite sheets, be sure to find out what the dimensions of the sprite are</p>
+</blockquote>
+
+<h2 id="using-object-oriented-programming">Using Object Oriented Programming</h2>
+
+<p>Object Oriented Programming is a model in programming which creates ‘objects’. Specific data or parameters can then be assigned to the object in classes. The classes are essentially ‘blueprints’, which can be used to create more instances of the same object. This makes it easier to reuse and keep track of data.</p>
+
+<p>We are going to create a class for our sprite. Each class can have different methods, which are functions assigned to each class. Our sprite object will have 3 methods; constructor method, draw method, and update method</p>
+
+<p>The constructor method sets the values which will be assigned to this class. The values assigned are explained in the code’s comments</p>
+
+<p>We are also creating a draw method, in order to ‘draw’ the image on the canvas created earlier. The parameters given to the method are the same we set in the constructor method</p>
+
+<blockquote>
+  <p>place this class structure within the onLoad function we created earlier</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">class</span> <span class="nc">Dog</span> <span class="p">{</span>
+            <span class="n">constructor</span><span class="p">(){</span>  <span class="o">//</span> <span class="n">constructor</span> <span class="n">method</span> <span class="k">for</span> <span class="n">outlining</span> <span class="n">data</span> <span class="n">points</span> <span class="n">about</span> <span class="n">the</span> <span class="n">sprite</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">"dogSprite"</span><span class="p">)</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span> <span class="o">=</span> <span class="mi">160</span><span class="p">;</span> <span class="o">//</span> <span class="n">place</span> <span class="n">the</span> <span class="n">sprite</span> <span class="n">width</span> <span class="ow">and</span> <span class="n">height</span> <span class="n">here</span> 
+                <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span> <span class="o">=</span> <span class="mi">144</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span><span class="p">;</span> <span class="o">//</span><span class="n">takes</span> <span class="n">sprite</span> <span class="n">dimensions</span> <span class="ow">and</span> <span class="n">accounts</span> <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">image</span> <span class="n">generation</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">//</span><span class="n">starts</span> <span class="n">image</span> <span class="n">generation</span> <span class="ow">in</span> <span class="n">coordinate</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="n">px</span> <span class="n">on</span> <span class="n">sprite</span> <span class="n">sheet</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="o">//</span><span class="n">scale</span> <span class="n">of</span> <span class="n">image</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">minFrame</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">maxFrame</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span> <span class="o">//</span> <span class="n">how</span> <span class="n">many</span> <span class="n">sprites</span> <span class="n">there</span> <span class="n">are</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">row</span> 
+                <span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">//</span> <span class="n">sets</span> <span class="n">position</span> <span class="n">of</span> <span class="n">sprite</span> <span class="n">that</span> <span class="ow">is</span> <span class="n">being</span> <span class="n">generated</span><span class="p">.</span> <span class="n">There</span> <span class="n">are</span> <span class="n">the</span> <span class="n">two</span> <span class="n">parameters</span> <span class="n">we</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changing</span> <span class="ow">in</span> <span class="n">order</span> <span class="n">to</span> <span class="n">crete</span> <span class="n">the</span> <span class="n">animation</span><span class="p">.</span> 
+                <span class="n">this</span><span class="p">.</span><span class="n">frameY</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">draw</span><span class="p">(</span><span class="n">context</span><span class="p">){</span>
+                <span class="n">context</span><span class="p">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">this</span><span class="p">.</span><span class="n">image</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">frameY</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">scale</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">height</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">scale</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="o">//</span> <span class="n">more</span> <span class="n">code</span> <span class="n">will</span> <span class="n">placed</span> <span class="n">here</span> <span class="n">later</span>
+        <span class="p">};</span>
+</code></pre></div></div>
+
+<h2 id="how-the-animation-works">How the animation works</h2>
+
+<p>As mentioned above, the sprite sheet contains sprites placed side by side at even intervals. The code we write will generate an image with the dimensions 160 by 144 pixels, since that is the size of an individual sprite. The first image generated starts at the origin point (0,0) px. The update method (not written yet) will then shift the origin point over to the right by 160 pixels, so that the next image generated is the 2nd frame.</p>
+
+<h2 id="writing-the-update-method">Writing the Update Method</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">class</span> <span class="nc">Dog</span> <span class="p">{</span>
+            <span class="n">constructor</span><span class="p">(){</span> 
+                <span class="n">this</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">"dogSprite"</span><span class="p">)</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span> <span class="o">=</span> <span class="mi">160</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span> <span class="o">=</span> <span class="mi">144</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">minFrame</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">maxFrame</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span> 
+                <span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> 
+                <span class="n">this</span><span class="p">.</span><span class="n">frameY</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">draw</span><span class="p">(</span><span class="n">context</span><span class="p">){</span>
+                <span class="n">context</span><span class="p">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">this</span><span class="p">.</span><span class="n">image</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">frameY</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">scale</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">height</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">scale</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="n">update</span><span class="p">(){</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">&lt;</span> <span class="mi">24</span><span class="p">)</span> <span class="n">this</span><span class="p">.</span><span class="n">frameX</span><span class="o">++</span> <span class="o">//</span> <span class="n">increases</span> <span class="n">the</span> <span class="n">horizontal</span> <span class="n">position</span> <span class="n">of</span> <span class="n">the</span> <span class="n">origin</span> <span class="n">point</span> <span class="n">by</span> <span class="n">sprite</span> <span class="n">width</span>
+                <span class="k">else</span> <span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">//</span> <span class="n">resets</span> <span class="n">the</span> <span class="n">origin</span> <span class="n">point</span> <span class="n">to</span> <span class="n">the</span> <span class="n">beginning</span> <span class="n">of</span> <span class="n">the</span> <span class="n">row</span> <span class="n">after</span> <span class="n">the</span> <span class="mi">24</span><span class="n">th</span> <span class="n">frame</span><span class="p">,</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">loop</span> 
+
+                <span class="o">//</span><span class="n">more</span> <span class="n">code</span> <span class="n">will</span> <span class="n">be</span> <span class="n">placed</span> <span class="n">here</span> <span class="n">later</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>NOTE: This code only plays one of the three animations. In other words only one row of the sprite sheet is being played. In order to have the animation change, we will need to code user inputs into the update method.</p>
+</blockquote>
+
+<h2 id="making-your-animation-user-responsive">Making Your Animation User Responsive</h2>
+
+<p>In order to make our animations adaptive to user inputs, we can use eventListeners to detect when a user clicks on a different button. While we are using radio buttons in this example, eventListeners can be set to detect other user inputs, such as a mouse movement or keystroke, or even an in-game event like losing the game.</p>
+
+<p>These eventListeners will then trigger a certain function which changes the animation on the screen.</p>
+
+<p>The parameter this.frameY is what controls which animation is being played, but we can change its value through eventListeners. ‘Idle’ would set this.frameY equal to 0, which would play the first row of animation on the spreadsheet (remember: python starts it’s index from 0). The “bark” button would play the second row by setting this.frameY equal to 1, and so on.</p>
+
+<blockquote>
+  <p>Place the following code in the update method</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>               
+               <span class="n">const</span> <span class="n">idle</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">'idle'</span><span class="p">);</span>
+                <span class="n">idle</span><span class="p">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s">'click'</span><span class="p">,</span> <span class="n">function</span><span class="p">(){</span> 
+                    <span class="n">dog</span><span class="p">.</span><span class="n">frameY</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="p">});</span> 
+
+                <span class="n">const</span> <span class="n">barking</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">'barking'</span><span class="p">);</span>
+                <span class="n">barking</span><span class="p">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s">'click'</span><span class="p">,</span> <span class="n">function</span><span class="p">(){</span> 
+                    <span class="n">dog</span><span class="p">.</span><span class="n">frameY</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="p">});</span>
+
+                <span class="n">const</span> <span class="n">walking</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">'walking'</span><span class="p">);</span>
+                <span class="n">walking</span><span class="p">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s">'click'</span><span class="p">,</span> <span class="n">function</span><span class="p">(){</span> 
+                    <span class="n">dog</span><span class="p">.</span><span class="n">frameY</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+                <span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="calling-class-methods">Calling Class Methods</h2>
+
+<p>All the functions have been written; all thats left is to call them when the page loads.</p>
+
+<p>Place the following code outside of the class framework, but still within the onLoad function:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">const</span> <span class="n">dog</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Dog</span><span class="p">();</span> <span class="o">//</span> <span class="n">creates</span> <span class="n">new</span> <span class="n">instance</span> <span class="n">of</span> <span class="nb">object</span> <span class="k">with</span> <span class="k">class</span> <span class="nc">Dog</span>
+
+<span class="n">function</span> <span class="n">animate</span><span class="p">(){</span> 
+    <span class="n">ctx</span><span class="p">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">canvas</span><span class="p">.</span><span class="n">width</span><span class="p">,</span> <span class="n">canvas</span><span class="p">.</span><span class="n">height</span><span class="p">);</span> <span class="o">//</span> <span class="n">clears</span> <span class="n">canvas</span> <span class="n">of</span> <span class="n">previous</span> <span class="n">frame</span> <span class="n">before</span> <span class="n">generating</span> <span class="n">new</span> <span class="n">frame</span>
+    <span class="n">dog</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">ctx</span><span class="p">);</span> <span class="o">//</span> <span class="n">draw</span> <span class="n">method</span> <span class="k">from</span> <span class="n">Dog</span> <span class="n">class</span><span class="p">:</span> <span class="n">generates</span> <span class="n">image</span>
+    <span class="n">dog</span><span class="p">.</span><span class="n">update</span><span class="p">();</span> <span class="o">//</span> <span class="n">update</span> <span class="n">method</span> <span class="k">from</span> <span class="n">Dog</span> <span class="n">class</span><span class="p">:</span> <span class="n">moves</span> <span class="n">origin</span> <span class="n">point</span> <span class="k">for</span> <span class="n">the</span> <span class="nb">next</span> <span class="n">frame</span> <span class="n">drawn</span> 
+    <span class="n">requestAnimationFrame</span><span class="p">(</span><span class="n">animate</span><span class="p">);</span> <span class="o">//</span> <span class="n">built</span> <span class="ow">in</span> <span class="n">function</span><span class="p">;</span> <span class="n">lets</span> <span class="n">the</span> <span class="n">browser</span> <span class="n">know</span> <span class="n">you</span> <span class="n">want</span> <span class="n">an</span> <span class="n">animation</span> <span class="n">to</span> <span class="n">be</span> <span class="n">displayed</span><span class="p">;</span> <span class="n">sets</span> <span class="n">the</span> <span class="n">rate</span> <span class="n">at</span> <span class="n">the</span> <span class="n">usual</span> <span class="n">animation</span> <span class="n">rate</span> <span class="n">of</span> <span class="mi">24</span> <span class="n">frames</span> <span class="n">per</span> <span class="n">second</span>
+<span class="p">}</span>
+<span class="n">animate</span><span class="p">();</span> <span class="o">//</span> <span class="n">calling</span> <span class="n">animate</span> <span class="n">function</span>
+</code></pre></div></div>
+
+<h2 id="put-it-all-together">Put It all Together</h2>
+
+<p>Create a new HTML file and place all the code together! The animation should run similar to the example show below</p>
+
+<blockquote>
+  <p>As an extra challenge:</p>
+</blockquote>
+
+<ul>
+  <li>
+    <p>Try and see if you can get the animation to respond to different user inputs (other then the radio buttons)
+<br /></p>
+  </li>
+  <li>
+    <p>Or; get the dog sprite to actually move across the screen during the walk animation using translations</p>
+  </li>
+</ul>
+
+<p><strong> <em>your code should end up looking like the example below</em> </strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">html</span>
+
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span> <span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s">"spriteContainer"</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="n">Within</span> <span class="n">the</span> <span class="n">base</span> <span class="n">div</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">canvas</span><span class="p">.</span> <span class="n">An</span> <span class="n">HTML</span> <span class="n">canvas</span> <span class="ow">is</span> <span class="n">used</span> <span class="n">only</span> <span class="k">for</span> <span class="n">graphics</span><span class="p">.</span> <span class="n">It</span> <span class="n">allows</span> <span class="n">the</span> <span class="n">user</span> <span class="n">to</span> <span class="n">access</span> <span class="n">some</span> <span class="n">basic</span> <span class="n">functions</span> <span class="n">related</span> <span class="n">to</span> <span class="n">the</span> <span class="n">image</span> <span class="n">created</span> <span class="n">on</span> <span class="n">the</span> <span class="n">canvas</span> <span class="p">(</span><span class="n">including</span> <span class="n">animation</span><span class="p">)</span> <span class="o">--&gt;</span>
+            <span class="o">&lt;</span><span class="n">img</span> <span class="nb">id</span> <span class="o">=</span><span class="s">"dogSprite"</span> <span class="n">src</span><span class="o">=</span><span class="s">""</span><span class="o">&gt;</span> 
+        <span class="o">&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s">"controls"</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span><span class="n">basic</span> <span class="n">radio</span> <span class="n">buttons</span> <span class="n">which</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">check</span> <span class="n">whether</span> <span class="n">each</span> <span class="n">individual</span> <span class="n">animaiton</span> <span class="n">works</span> <span class="o">--&gt;</span>
+            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s">"animation"</span> <span class="nb">id</span><span class="o">=</span><span class="s">"idle"</span> <span class="n">checked</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">"idle"</span><span class="o">&gt;</span><span class="n">Idle</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s">"animation"</span> <span class="nb">id</span><span class="o">=</span><span class="s">"barking"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">"barking"</span><span class="o">&gt;</span> <span class="n">Barking</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="n">name</span><span class="o">=</span><span class="s">"animation"</span> <span class="nb">id</span><span class="o">=</span><span class="s">"walking"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">"walking"</span><span class="o">&gt;</span> <span class="n">Walking</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+    <span class="n">window</span><span class="p">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s">'load'</span><span class="p">,</span> <span class="n">function</span><span class="p">(){</span>
+        <span class="n">sheet_row</span> <span class="o">=</span> <span class="mi">0</span> 
+        <span class="n">const</span> <span class="n">canvas</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">'spriteContainer'</span><span class="p">);</span>
+        <span class="n">const</span> <span class="n">ctx</span> <span class="o">=</span> <span class="n">canvas</span><span class="p">.</span><span class="n">getContext</span><span class="p">(</span><span class="s">'2d'</span><span class="p">);</span>
+        <span class="n">canvas</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">160</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span> 
+        <span class="n">canvas</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">144</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span> 
+
+        <span class="k">class</span> <span class="nc">Dog</span> <span class="p">{</span>
+            <span class="n">constructor</span><span class="p">(){</span> 
+                <span class="n">this</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">"dogSprite"</span><span class="p">)</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span> <span class="o">=</span> <span class="mi">160</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span> <span class="o">=</span> <span class="mi">144</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">minFrame</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">this</span><span class="p">.</span><span class="n">maxFrame</span> <span class="o">=</span> <span class="mi">48</span><span class="p">;</span> 
+                <span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> 
+                <span class="n">this</span><span class="p">.</span><span class="n">frameY</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="n">draw</span><span class="p">(</span><span class="n">context</span><span class="p">){</span>
+                <span class="n">context</span><span class="p">.</span><span class="n">drawImage</span><span class="p">(</span><span class="n">this</span><span class="p">.</span><span class="n">image</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">frameY</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteWidth</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">spriteHeight</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">scale</span><span class="p">,</span> <span class="n">this</span><span class="p">.</span><span class="n">height</span> <span class="o">*</span> <span class="n">this</span><span class="p">.</span><span class="n">scale</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="n">update</span><span class="p">(){</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">&lt;</span> <span class="mi">47</span><span class="p">)</span> <span class="n">this</span><span class="p">.</span><span class="n">frameX</span><span class="o">++</span> 
+                <span class="k">else</span> <span class="n">this</span><span class="p">.</span><span class="n">frameX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> 
+
+                <span class="n">const</span> <span class="n">idle</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">'idle'</span><span class="p">);</span>
+                <span class="n">idle</span><span class="p">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s">'click'</span><span class="p">,</span> <span class="n">function</span><span class="p">(){</span>
+                    <span class="n">dog</span><span class="p">.</span><span class="n">frameY</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="p">});</span> 
+
+                <span class="n">const</span> <span class="n">barking</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">'barking'</span><span class="p">);</span>
+                <span class="n">barking</span><span class="p">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s">'click'</span><span class="p">,</span> <span class="n">function</span><span class="p">(){</span> 
+                    <span class="n">dog</span><span class="p">.</span><span class="n">frameY</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+                    <span class="n">console</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="s">'hello'</span><span class="p">);</span>
+                <span class="p">});</span>
+
+                <span class="n">const</span> <span class="n">walking</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">'walking'</span><span class="p">);</span>
+                <span class="n">walking</span><span class="p">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s">'click'</span><span class="p">,</span> <span class="n">function</span><span class="p">(){</span> 
+                    <span class="n">dog</span><span class="p">.</span><span class="n">frameY</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+                <span class="p">});</span>
+            <span class="p">};</span>
+        <span class="p">};</span>
+
+        <span class="n">const</span> <span class="n">dog</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Dog</span><span class="p">();</span> <span class="o">//</span> <span class="n">creates</span> <span class="n">new</span> <span class="n">instance</span> <span class="n">of</span> <span class="nb">object</span> <span class="k">with</span> <span class="k">class</span> <span class="nc">Dog</span>
+
+        <span class="n">function</span> <span class="n">animate</span><span class="p">(){</span> 
+            <span class="n">ctx</span><span class="p">.</span><span class="n">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">canvas</span><span class="p">.</span><span class="n">width</span><span class="p">,</span> <span class="n">canvas</span><span class="p">.</span><span class="n">height</span><span class="p">);</span> <span class="o">//</span> <span class="n">clears</span> <span class="n">canvas</span> <span class="n">of</span> <span class="n">previous</span> <span class="n">frame</span> <span class="n">before</span> <span class="n">generating</span> <span class="n">new</span> <span class="n">frame</span>
+            <span class="n">dog</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">ctx</span><span class="p">);</span> <span class="o">//</span> <span class="n">draw</span> <span class="n">method</span> <span class="k">from</span> <span class="n">Dog</span> <span class="n">class</span><span class="p">:</span> <span class="n">generates</span> <span class="n">image</span>
+            <span class="n">dog</span><span class="p">.</span><span class="n">update</span><span class="p">();</span> <span class="o">//</span> <span class="n">update</span> <span class="n">method</span> <span class="k">from</span> <span class="n">Dog</span> <span class="n">class</span><span class="p">:</span> <span class="n">moves</span> <span class="n">origin</span> <span class="n">point</span> <span class="k">for</span> <span class="n">the</span> <span class="nb">next</span> <span class="n">frame</span> <span class="n">drawn</span> 
+            <span class="n">requestAnimationFrame</span><span class="p">(</span><span class="n">animate</span><span class="p">);</span> <span class="o">//</span> <span class="n">built</span> <span class="ow">in</span> <span class="n">function</span><span class="p">;</span> <span class="n">lets</span> <span class="n">the</span> <span class="n">browser</span> <span class="n">know</span> <span class="n">you</span> <span class="n">want</span> <span class="n">an</span> <span class="n">animation</span> <span class="n">to</span> <span class="n">be</span> <span class="n">displayed</span><span class="p">;</span> <span class="n">sets</span> <span class="n">the</span> <span class="n">rate</span> <span class="n">at</span> <span class="n">the</span> <span class="n">usual</span> <span class="n">animation</span> <span class="n">rate</span> <span class="n">of</span> <span class="mi">24</span> <span class="n">frames</span> <span class="n">per</span> <span class="n">second</span>
+<span class="p">}</span>
+<span class="n">animate</span><span class="p">();</span>
+
+<span class="p">});</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<body>
+    <div>
+        <canvas id="spriteContainer"> <!-- Within the base div is a canvas. An HTML canvas is used only for graphics. It allows the user to access some basic functions related to the image created on the canvas (including animation) -->
+            <img id="dogSprite" src="https://github.com/Ekamjot-Kaire/fast-pages/assets/111466888/157f83bd-3eda-4696-ac88-d3a993cce621" /> 
+        </canvas>
+        <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
+            <input type="radio" name="animation" id="idle" checked="" />
+            <label for="idle">Idle</label><br />
+            <input type="radio" name="animation" id="barking" />
+            <label for="barking"> Barking</label><br />
+            <input type="radio" name="animation" id="walking" />
+            <label for="walking"> Walking</label><br />
+        </div>
+    </div>
+</body>
+
+<script>
+    window.addEventListener('load', function(){
+        sheet_row = 0 
+        const canvas = document.getElementById('spriteContainer');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 160 * 2; 
+        canvas.height = 144 * 2; 
+
+        class Dog {
+            constructor(){ 
+                this.image = document.getElementById("dogSprite")
+                this.spriteWidth = 160;
+                this.spriteHeight = 144;
+                this.width = this.spriteWidth;
+                this.height = this.spriteHeight;
+                this.x = 0;
+                this.y = 0;
+                this.scale = 1;
+                this.minFrame = 0;
+                this.maxFrame = 48; 
+                this.frameX = 0; 
+                this.frameY = 0;
+            }
+
+            draw(context){
+                context.drawImage(this.image, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width * this.scale, this.height * this.scale);
+            }
+
+            update(){
+                if (this.frameX < 47) this.frameX++ 
+                else this.frameX = 0; 
+
+                const idle = document.getElementById('idle');
+                idle.addEventListener('click', function(){
+                    dog.frameY = 0;
+                }); 
+
+                const barking = document.getElementById('barking');
+                barking.addEventListener('click', function(){ 
+                    dog.frameY = 1;
+                    console.log('hello');
+                });
+
+                const walking = document.getElementById('walking');
+                walking.addEventListener('click', function(){ 
+                    dog.frameY = 2;
+                });
+            };
+        };
+
+        const dog = new Dog(); // creates new instance of object with class Dog
+
+        function animate(){ 
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // clears canvas of previous frame before generating new frame
+            dog.draw(ctx); // draw method from Dog class: generates image
+            dog.update(); // update method from Dog class: moves origin point for the next frame drawn 
+            requestAnimationFrame(animate); // built in function; lets the browser know you want an animation to be displayed; sets the rate at the usual animation rate of 24 frames per second
+}
+animate();
+
+});
+</script>
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="nighthawkcoders/"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/2023/06/17/lessondraft_IPYNB_2_.html" hidden></a>
+</article>
+
+        </section>
+
+        <footer>
+        
+          CompSci Blogs is maintained by <a href="https://github.com/Ekamjot-Kaire">Ekamjot-Kaire</a><br>
+        
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+      </div>
+    </div>
+  </body>
+</html>

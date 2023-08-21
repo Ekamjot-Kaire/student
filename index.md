@@ -1,9 +1,7 @@
 ---
 layout: default
-title: Student Blog
+title: Ekam Kaire
 ---
-
-<h1> Ekam Kaire </h1>
 
 <br>
 ft the iconic frog: 
