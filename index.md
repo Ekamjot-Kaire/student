@@ -13,63 +13,6 @@ ft the iconic frog:
 ## Work Done by Week:
 ### Tri 1:
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-mkpd{background-color:#93bd20;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
-.tg .tg-f15s{background-color:#93bd20;border-color:inherit;color:#ffffff;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg" style="undefined;table-layout: fixed; width: 619px">
-<colgroup>
-<col style="width: 63px">
-<col style="width: 257px">
-<col style="width: 299px">
-</colgroup>
-<thead>
-  <tr>
-    <th class="tg-mkpd"><span style="font-weight:bold">Week</span></th>
-    <th class="tg-f15s">Plans </th>
-    <th class="tg-f15s">Tangibles</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-fymr">1</td>
-    <td class="tg-0pky">- fix blog theme<br>- finish tools setup + week hacks</td>
-    <td class="tg-0pky"><a href="https://ekam.nighthawkcodingsociety.com/2023/07/23/toolsandequipment_IPYNB_2_.html" target="_blank" rel="noopener noreferrer">Tools and Equipment Hacks</a> <br><a href="https://ekam.nighthawkcodingsociety.com/c4.0/2023/08/15/java-hello_IPYNB_2_.html" target="_blank" rel="noopener noreferrer">Java Hello Blog</a><br></td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">2</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">3</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">4</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">5</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">6</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-</tbody>
-</table>
 
 <br>
 <br>
