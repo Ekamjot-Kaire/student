@@ -33,13 +33,16 @@ ft the iconic frog:
 <thead>
   <tr>
     <th class="tg-mkpd"><span style="font-weight:bold">Week</span></th>
+    <th class="tg-f15s">Plans for the Week</th>
     <th class="tg-f15s">Tangibles</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-fymr">1</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">fix github theme; finish working on week 0 and week 1 hacks</td>
+    <td class="tg-0pky"><a href="https://ekam.nighthawkcodingsociety.com/2023/07/23/toolsandequipment_IPYNB_2_.html">Tools and Equipment Hacks</a>
+                        <a href="https://ekam.nighthawkcodingsociety.com/c4.0/2023/08/15/java-hello_IPYNB_2_.html">Java Hello Hacks</a></td>
   </tr>
   <tr>
     <td class="tg-fymr">2</td>
