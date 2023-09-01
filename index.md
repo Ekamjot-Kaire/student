@@ -3,7 +3,23 @@ layout: default
 title: Ekam Kaire
 ---
 
+> Freeform image (drawn on Week 1)
+
+![](images/freeform.png)
+
+<h2> CSA OBJECTIVES + RESOURCES
 <br>
+<br>
+<h3> UNIT 1: Primitive Types
+<br>
+<strong>
+<a href="url">- 1.1 Why Java: OOP, System classes, basic syntax </a>
+- 1.2 Variable and Data Types:
+- 1.3 Expressions and Assignment Statements:
+- 1.4 Compound Assignment Operators:
+- 1.5 Casting and Ranges of Variables: 
+</strong>
+
 ft the iconic frog: 
 
 ![](https://i.pinimg.com/originals/83/ce/1e/83ce1e01b27c36bc241948cb3c2c555f.jpg)
@@ -13,19 +29,3 @@ ft the iconic frog:
 ## Work Done by Week:
 ### Tri 1:
 
-
-
-<br>
-<br>
-
-![](images/freeform.png)
-
-<br>
-<br>
-
-## Overview of Hacks, Study and Tangibles
-Blogging in GitHub pages is a way to learn and code at the same time. 
-
-- Plans, Lists, [Scrum Boards](https://clickup.com/blog/scrum-board/) help you to track key events, show progress and record time.  Effort is a big part of your class grade.  Show plans and time spent!
-- [Hacks(Todo)](https://levelup.gitconnected.com/six-ultimate-daily-hacks-for-every-programmer-60f5f10feae) enable you to stay in focus with key requirements of the class.  Each Hack will produce Tangibles.
-- Tangibles or [Tangible Artifacts](https://en.wikipedia.org/wiki/Artifact_(software_development)) are things you accumulate as a learner and coder. 

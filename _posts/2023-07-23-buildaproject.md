@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Build a Project Hack
+courses: { csa: {week: 1} }
 ---
 
 
