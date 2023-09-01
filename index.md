@@ -7,10 +7,12 @@ title: Ekam Kaire
 
 ![](images/freeform.png)
 
-<h2> CSA OBJECTIVES + RESOURCES
+<br>
+
+<h2> CSA OBJECTIVES + RESOURCES </h2>
 <br>
 <br>
-<h3> UNIT 1: Primitive Types
+<h3> UNIT 1: Primitive Types </h3>
 <br>
 <strong>
 <a href="url">- 1.1 Why Java: OOP, System classes, basic syntax </a>
@@ -20,12 +22,14 @@ title: Ekam Kaire
 - 1.5 Casting and Ranges of Variables: 
 </strong>
 
+
+<br>
+<br>
 ft the iconic frog: 
 
-![](https://i.pinimg.com/originals/83/ce/1e/83ce1e01b27c36bc241948cb3c2c555f.jpg)
+
+<img src="https://i.pinimg.com/originals/83/ce/1e/83ce1e01b27c36bc241948cb3c2c555f.jpg" 
+     width="200" 
+     height="300" />
 
 <br> 
-
-## Work Done by Week:
-### Tri 1:
-
