@@ -8,9 +8,6 @@ image: /images/snake.png
 courses: { csa: {week: 2} }
 tags: [javascript]
 ---
-
-{% include nav_frontend.html %}
-
 <style>
 
     body{
