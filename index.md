@@ -15,7 +15,7 @@ title: Ekam Kaire
 <h3> UNIT 1: Primitive Types </h3>
 <br>
 <strong>
-<a href="url">- 1.1 Why Java: OOP, System classes, basic syntax </a>
+<a href="https://ekam.nighthawkcodingsociety.com/2023/09/01/unit1notes.html">- 1.1 Why Java: OOP, System classes, basic syntax </a>
 - 1.2 Variable and Data Types:
 - 1.3 Expressions and Assignment Statements:
 - 1.4 Compound Assignment Operators:
