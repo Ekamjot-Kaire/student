@@ -21,10 +21,10 @@ title: Ekam Kaire
 - 1.4 Compound Assignment Operators:
 - 1.5 Casting and Ranges of Variables: 
 
-</strong>
 
 <br>
 <br>
+
 
 <h2> PLANS BY WEEK </h2>
 
@@ -32,6 +32,9 @@ title: Ekam Kaire
 - Set up tools + enviornments --> done
 - Rework theme --> done
 - Fix front page --> done
+
+<br>
+
 <strong> WEEK 2: </strong>
 - Apply Lab Notebook setup to blog --> done 
 - Java console games + understand basics of Java classes and objects --> done (partially?)
