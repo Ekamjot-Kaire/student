@@ -20,7 +20,21 @@ title: Ekam Kaire
 - 1.3 Expressions and Assignment Statements:
 - 1.4 Compound Assignment Operators:
 - 1.5 Casting and Ranges of Variables: 
+
 </strong>
+
+<br>
+<br>
+
+<h2> PLANS BY WEEK </h2>
+
+<strong> WEEK 0 + 1: </strong>
+- Set up tools + enviornments --> done
+- Rework theme --> done
+- Fix front page --> done
+<strong> WEEK 2: </strong>
+- Apply Lab Notebook setup to blog --> done 
+- Java console games + understand basics of Java classes and objects --> done (partially?)
 
 
 <br>
