@@ -9,13 +9,16 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+// Class.forName("org.sqlite.JDBC");
+
 public class SQLiteExample {
-    private static final String JDBC_URL = "jdbc:sqlite:meetings.db";
+    // private static final String JDBC_URL = "jdbc:sqlite:meetings.db";
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/meetings";
 
     public static void main(String[] args) {
         try {
             // creating a connection
-            Connection connection = DriverManager.getConnection(JDBC_URL);
+            Connection connection = DriverManager.getConnection(JDBC_URL, "ekamjot.kaurr@gmail.com", "Will0w*0");
 
             // creating database + tables
             createDatabase(connection);
