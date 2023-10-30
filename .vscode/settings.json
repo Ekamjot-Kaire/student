@@ -1,3 +1,8 @@
 {
-    "DockerRun.DisableAutoGenerateConfig": true
+    "DockerRun.DisableAutoGenerateConfig": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "project_plans/library/sqlite-jdbc-3.43.2.2.jar",
+        "project_plans/sqlite-jdbc-3.43.2.2.jar"
+    ]
 }

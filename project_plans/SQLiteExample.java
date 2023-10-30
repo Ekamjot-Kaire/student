@@ -13,9 +13,17 @@ import java.sql.Statement;
 
 public class SQLiteExample {
     public static void main(String[] args) {
-        System.out.println("running this file");
+        // System.out.println("running this file");
         String jdbcUrl = "jdbc:sqlite:/test.db";
+        try{
+            Class.forName("org.sqlite.JDBC");
+            System.out.println("class loaded");
+        } catch (ClassNotFoundException e) {
+            System.out.println("catch err");
+        }
+        
         try {
+            
             Connection connection = DriverManager.getConnection(jdbcUrl);
             String sql = "SELECT * FROM meetings";
 
