@@ -12,7 +12,6 @@ import java.sql.Statement;
 
 
 public class SQLiteExample {
-
     public static void main(String[] args) {
         System.out.println("running this file");
         String jdbcUrl = "jdbc:sqlite:/test.db";
@@ -36,4 +35,4 @@ public class SQLiteExample {
         }
     }
 }
-SQLiteExample.main(null);
+
