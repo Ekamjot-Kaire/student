@@ -4,5 +4,6 @@
         "lib/**/*.jar",
         "project_plans/library/sqlite-jdbc-3.43.2.2.jar",
         "project_plans/sqlite-jdbc-3.43.2.2.jar"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
