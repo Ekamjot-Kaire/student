@@ -26,18 +26,51 @@ title: Ekam Kaire
 <br>
 
 
-<h2> PLANS BY WEEK </h2>
+<h2> PLANS BY WEEK | TRI 2 </h2>
 
-<strong> WEEK 0 + 1: </strong>
-- Set up tools + enviornments --> done
-- Rework theme --> done
-- Fix front page --> done
+<strong> WEEK 13: </strong>
+Sorting/Fibonacci Mini-Project: Ideation Week
+
+[Issue](https://github.com/Card-Complexity/Card-Complexity-issues/issues/1)
 
 <br>
 
-<strong> WEEK 2: </strong>
-- Apply Lab Notebook setup to blog --> done 
-- Java console games + understand basics of Java classes and objects --> done (partially?)
+<strong> WEEK 14: </strong>
+Sorting/Fibonacci Mini-Project: Work Week
+
+<strong> WEEK 15: </strong>
+Sorting/Fibonacci Mini-Project: Work Week + Student Lessons
+
+[SASS Student Lesson](https://ekam.nighthawkcodingsociety.com/2023/12/10/FinalSASSLesson_IPYNB_2_.html)
+
+[JQuery Student Lesson]()
+
+<h2> SORTING/FIBONACCI PROJECT: </h2>
+
+[Final Issue](https://github.com/Card-Complexity/Card-Complexity-issues/issues/3)
+[Runtime Link](https://card-complexity.github.io/Card-Visualization-Frontend/cardtest.html)
+
+
+<strong> WEEK 16: </strong>
+Student Lessons:
+
+[SQL Student Lesson](https://github.com/Tirth-Thakkar/LessonGroup/blob/main/_notebooks/2023-12-13-SQL_and_Collections.ipynb)
+
+
+<strong> WEEK 17: </strong>
+Student Lessons:
+
+[JWT Student Lesson](https://ekam.nighthawkcodingsociety.com/2023/12/19/JWTLesson_IPYNB_2_.html)
+
+[Java Exploits Student Lesson](https://ekam.nighthawkcodingsociety.com/2023/12/08/JavaExploitsStudent_IPYNB_2_.html)
+
+[CollegeBoard MC Practice Quiz](https://ekam.nighthawkcodingsociety.com/2023/12/21/mcqcorrections_IPYNB_2_.html)
+
+<strong> WEEK 18: </strong>
+Big Two-Trimester Project: Ideation Week
+
+[Team Issue](https://github.com/John-sCC/jcc_frontend/issues/4)
+
 
 
 <br>
