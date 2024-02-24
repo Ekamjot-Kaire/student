@@ -2,7 +2,7 @@ title: Ekam Kaire | CSA Lab Notebook
 description: "August 2023 to June 2024"
 owner_name: Nighthawk Coders
 github_username: nighthawkcoders
-baseurl: "https://ekam.nighthawkcodingsociety.com/"
+baseurl: ""
 remote_theme: pages-themes/slate@v0.2.0
 # remote_theme: pages-themes/tactile@v0.2.0
 # remote_theme: pages-themes/midnight@v0.2.0
